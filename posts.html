@@ -1,0 +1,33 @@
+---
+layout: page
+title: Posts
+permalink: /posts/
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li class="entry">
+        
+        <div class="post-meta">
+
+          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> | 
+
+          <span class="post-categories">{{ post.categories  | join: ' | ' }}</span>
+
+        </div>
+
+        <h4>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h4>
+       
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

@@ -1,17 +1,24 @@
 ---
 layout: default
 ---
-<div class="wrapper">
-	
+
+
+<ul class="breadcrumbs">
+
+	<li><a href="{{ site.baseurl }}/">Home</a></li>
+	<li>{{ page.title }}</li>
+
+</ul>
+
 	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
 	  <header class="post-header">
 
-	  	<span class="post-categories">{{ page.categories  | join: ' | ' }}</span>
-
 	    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
 
 	    <div class="post-meta">
+
+				<span class="post-categories">{{ page.tags  | join: ' | ' }}</span>
 
 	      <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
 
@@ -20,10 +27,12 @@ layout: default
 	  </header>
 
 	  <div class="post-content" itemprop="articleBody">
-	    {{ content }}
+
+		  {{ content }}
+
 	  </div>
-		
-		{{% if page.comments %}}
+
+		{% if page.comments %}
 		<div id="disqus_thread"></div>
 
 		<script type="text/javascript">
@@ -38,10 +47,6 @@ layout: default
 		})();
 		</script>
 		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-		{{% endif %}}
+		{% endif %}
 
 	</article>
-	
-</div>
-
-

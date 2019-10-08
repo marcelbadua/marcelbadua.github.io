@@ -17,3 +17,4 @@ github_username:  marcelbadua
 
 # Build settings
 markdown: kramdown
+include: ['_pages']

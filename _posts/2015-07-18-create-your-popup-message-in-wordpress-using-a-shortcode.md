@@ -2,8 +2,7 @@
 layout: post
 title:  "Create your popup message in Wordpress using a shortcode"
 date:   2015-07-18 22:07:20
-categories: tutorial
-tags: wordpress plugin
+tags: tutorial
 ---
 On this tutorial, we will create a shortcode with content, and use of `sessionStorage`.
 
@@ -30,7 +29,7 @@ Inside your function, add this html that will display your popup on your page
 Add this css to style your popup
 
 {% highlight css %}
-.popup-content { 
+.popup-content {
     display: none;
     position: fixed;
     top: 0;

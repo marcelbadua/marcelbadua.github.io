@@ -2,8 +2,7 @@
 layout: post
 title:  "Author your own Wordpress Team Plugin"
 date:   2015-07-21 19:09:20
-categories: tutorial
-tags: wordpress plugin
+tags: tutorial
 ---
 
 <p>When developing a website for a business company, sometimes there is a requirement for adding the company's team members on their page. Let's build a plugin that create custom post type for team, some extra custom fields and a shortcode for displaying. Follow this steps to create your own Wordpress Team plugin.</p>
@@ -80,9 +79,9 @@ $meta =  new AT_Meta_Box($config);
 
 {% highlight php startinline=true %}
 $meta->addRepeaterBlock($prefix.'contact_entry',array(
-  'inline'   => true, 
+  'inline'   => true,
   'name'     => 'Contact Details',
-  'fields'   => $repeater_fields, 
+  'fields'   => $repeater_fields,
   'sortable' => true
 ));
 {% endhighlight %}
@@ -107,7 +106,7 @@ function my_team_func() {
   $prefix = 'my_team_';
   $args = array( 'post_type' => 'team' );
   $the_query = new WP_Query( $args );
-  while ( $the_query->have_posts() ) : $the_query->the_post(); 
+  while ( $the_query->have_posts() ) : $the_query->the_post();
     the_post_thumbnail('medium');
     the_title('<h3>;', '</h3>');
     the_content( );

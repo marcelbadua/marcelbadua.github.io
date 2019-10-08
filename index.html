@@ -1,45 +1,37 @@
 ---
-layout: blank
+layout: default
 ---
 
-<div class="home">
+<div class="posts">
 
-  <div class="content">
-  	<h1>Marcel <span>Badua</span></h1>
-  	<h2>Web Designer & Front-End Developer</h2>
-  </div>
+{% for post in site.posts %}
 
-</div>
+  <article class="entry">
 
-<div class="about">
-	
-	<div class="wrapper">
-		
-		
-			<img src="/img/avatar.png" alt="">
-			
-			<h2>Digital Greetings! I'm Marcel Badua</h2>
+    <div class="post-header">
 
-			<p>I'm a designer and a developer specializing in UI/UX Design, Theme & Plugin Development, Branding and Graphic Design. This has been my bread and butter for more than a decade and still continues to learn and develop my craft. When I'm not working - I like to read, do photography, make music and play Minecraft with my ever sweetest son - Gab!</p>
-		
+        <h4><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
 
-		
+        <div class="post-meta">
 
-		            
-		<h3>My expertise</h3>
-				
-		<h4>Web Design</h4>
+          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> |
 
-		<p>HTML, CSS, jQuery, Preproccessor(SASS and LESS), Web Frameworks(Bootstrap, Bourbon)</p>
+          <span class="post-categories">{{ post.tags  | join: ' | ' }}</span>
 
-		<h4>Development</h4>
-		
-		<p>PHP, mySQL, Wordpress, Laravel</p>
+        </div>
 
-		<h4>Graphic Design</h4>
-		
-		<p>Corporate Identity, Branding, Logo, Mockup Presentations, Banners</p>
+    </div>
 
-	</div>
+    <div class="post-summary">
+
+      {{ post.excerpt }}
+
+    </div>
+
+  </article>
+
+{% endfor %}
 
 </div>
+
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

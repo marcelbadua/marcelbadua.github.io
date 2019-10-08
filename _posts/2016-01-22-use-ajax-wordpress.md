@@ -2,8 +2,7 @@
 layout: post
 title:  "Use AJAX on Wordpress"
 date:   2016-01-22 22:29:00
-categories: tutorial
-tags: wordpress AJAX
+tags: tutorial
 ---
 
 Let's start by creating the function.
@@ -51,4 +50,3 @@ jQuery(document).on('change', '#text-ajax', function() {
   return false;
 })
 {% endhighlight%}
-

@@ -166,6 +166,16 @@ pre {
 }
 
 /**
+ * Horizontal Rule
+ */
+
+hr {
+  border: 0;
+  border-top: 1px solid $grey-color-light;
+  margin-bottom: $base-spacing;
+}
+
+/**
  * Clearfix
  */
 %clearfix {

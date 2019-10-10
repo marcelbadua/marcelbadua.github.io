@@ -32,35 +32,14 @@
   }
 }
 #site-wrap {
-  display: grid;
-  grid-template-columns: 33.33% 66.66%;
-
   #site-header {
     background-color: #343233;
-
-    min-height: 100vh;
-    position: relative;
-    .container  {
-      position: fixed;
-      top: 0;
-      right: auto;
-      bottom: 0;
-      left: 0;
-      //padding: $base-spacing*2;
-      width: 33.33%;
-
-    }
-    .site-title {
-      font-size: 2rem;
-      position: absolute;
-      bottom: $base-spacing*2;
-      right: $base-spacing*2;
-    }
+    padding: $base-spacing;
     a {
       color: #F0F0F0;
     }
-    nav {
-      //text-align: right;
+    .site-title {
+      font-size: 2rem;
     }
   }
   #site-content {
@@ -69,4 +48,27 @@
   #site-footer {
     display: none;
   }
+
+  @media screen and (min-width: 426px) {
+    display: grid;
+    grid-template-columns: 33.33% 66.66%;
+    #site-header {
+      min-height: 100vh;
+      position: relative;
+      .container  {
+        position: fixed;
+        top: 0;
+        right: auto;
+        bottom: 0;
+        left: 0;
+        width: 33.33%;
+        .site-title {
+          position: absolute;
+          bottom: $base-spacing*2;
+          right: $base-spacing*2;
+        }
+      }
+    }
+  }
+
 }

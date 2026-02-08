@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<section class="tag-archive-page">
+  <h1>Tag: {{ page.tag }}</h1>
+  <p class="section-intro">
+    Posts tagged under <strong>{{ page.tag }}</strong>.
+  </p>
+
+  <div class="posts-list">
+    {% assign tag_posts = site.tags[page.tag] %}
+    {% if tag_posts %}
+      {% for post in tag_posts %}
+        <article class="post-card">
+          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+          <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+          <p>{{ post.excerpt }}</p>
+        </article>
+      {% endfor %}
+    {% else %}
+      <p>No posts found under this tag.</p>
+    {% endif %}
+  </div>
+
+  <a href="/tags" class="back-link">← Back to all tags</a>
+</section>

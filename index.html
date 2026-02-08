@@ -2,22 +2,16 @@
 layout: default
 ---
 
-<h3>Digital Greetings!</h3>
+<div class="home-intro">
+  <h1>Marcel Badua</h1>
 
-<p>Hi! I am Marcel Badua. I design and develop websites for human use. For a decade, I have focused in building themes and plugins for Wordpress.</p>
+  <h5>Between movement and the ordinary,
+    <br>slowly making things.</h5>
 
-<p>I can also build apps with Angular and Ionic.</p>
+</div>
 
-<p>I am available for consulting, resource speaker and/or just plainly teach about creating meaningful websites.</p>
 
-<p>I previously worked with a lot of <a target="_blank" href="https://www.deviantart.com/emtotskee/gallery/964362/portfolio-designs">branding project</a> for various clients.</p>
-
-<p>When I'm not working - I like to read and write, do photography and videos, make music, take long walks, and play Minecraft with my ever sweetest son - Gab!</p>
-
-<p>Checkout my CV on <a href="https://www.linkedin.com/in/marcel-badua-6306b536/">LinkedIn.</a></p>
-
-<hr>
-
+<!-- 
 <p>Reach me anytime: <a href="mailto:bitterdash@gmail.com">bitterdash@gmail.com</a></p>
 
 <p>Twitter: <a target="_blank" href="https://twitter.com/marcelbadua">@marcelbadua</a></p>
@@ -26,25 +20,32 @@ layout: default
 
 <p>Soundcloud: <a target="_blank" href="https://soundcloud.com/marcel-badua">marcel-badua</a></p>
 
-<p>Youtube: <a target="_blank" href="https://www.youtube.com/user/eMtotskee/videos">eMtotskee</a></p>
-
-<hr>
-
-<h3>Writing</h3>
+<p>Youtube: <a target="_blank" href="https://www.youtube.com/user/eMtotskee/videos">eMtotskee</a></p> -->
 
 <div class="posts">
 
-{% for post in site.posts %}
+{% for post in site.posts limit:3 %}
 
   <article class="entry">
 
-    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> | <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <div>
+      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </div>
 
+    <h5 class="post-title"><a href="{{ post.url | relative_url }}" class="post-link">{{ post.title }} </a></h5>
+
+  
     <div class="post-summary">
 
-      {{ post.excerpt }}
+        {% if post.excerpt %}
+          <p>{{ post.excerpt }}</p>
+        {% else %}
+          <p>{{ post.content | strip_html | truncate: 150 }}</p>
+        {% endif %}
 
     </div>
+
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read Full Article</a>
 
   </article>
 

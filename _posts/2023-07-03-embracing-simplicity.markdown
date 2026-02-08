@@ -4,7 +4,9 @@ title:  "Embracing Simplicity: A Path to Social Detoxification and Improved Ment
 date:   2023-07-03 11:53:00
 tags: blog
 ---
-In today's fast-paced and hyper-connected world, society often perpetuates the belief that more is better. We are surrounded by relentless messages encouraging us to strive for greater accomplishments, material possessions, and social status. This constant pursuit of success and validation can lead to an overwhelming burden of expectations, resulting in anxiety and depression. However, a paradigm shift towards simplicity can offer a solution to this modern-day predicament. By reducing our expectations and embracing a simpler lifestyle, we can embark on a journey of social detoxification that promotes mental well-being and inner peace.
+In today's fast-paced and hyper-connected world, society often perpetuates the belief that more is better. We are surrounded by relentless messages encouraging us to strive for greater accomplishments, material possessions, and social status. This constant pursuit of success and validation can lead to an overwhelming burden of expectations, resulting in anxiety and depression. 
+
+However, a paradigm shift towards simplicity can offer a solution to this modern-day predicament. By reducing our expectations and embracing a simpler lifestyle, we can embark on a journey of social detoxification that promotes mental well-being and inner peace.
 
 One of the fundamental steps towards social detoxification is acknowledging that the unrealistic expectations set by society can be detrimental to our mental health. Social media platforms, in particular, contribute significantly to this phenomenon by presenting curated versions of people's lives, fostering an environment where constant comparison and self-doubt thrive. By lowering our expectations of ourselves and others, we can begin to escape this toxic cycle.
 

@@ -4,23 +4,16 @@ title: About
 permalink: /about/
 ---
 
-<!--
-    <img src="/assets/img/avatar.png" alt=""> -->
+# Hi, I’m Marcel.  
 
-### Digital Greetings! I'm Marcel Badua
+I spend my days making things. Sometimes it’s writing—stories, reflections, little notes I don’t want to forget. Sometimes it’s images—photographs of quiet streets, long roads, and fleeting moments. Sometimes it’s music, or sketches, or experiments in design and code. And sometimes it’s nothing formal at all, just ideas floating until they find a shape.
 
-I'm a designer and a developer specializing in UI/UX Design, Theme & Plugin Development, Branding and Graphic Design. This has been my bread and butter for more than a decade and still continues to learn and develop my craft. When I'm not working - I like to read, do photography, make music and play Minecraft with my ever sweetest son - Gab!
+Movement is a big part of how I work and live. I bike long roads to think, I run to clear my mind, I walk just to notice the small details of the ordinary day. These rhythms—cycling, running, coding, creating—often become the backdrop for whatever ends up here.
 
-### My expertise
+I’m fascinated by the spaces in between: the ordinary days, the unexpected detours, the quiet hours when something slow and small emerges into something tangible. This website is my way of keeping a record of those moments: the projects, the images, the words, and the experiments that might otherwise be forgotten.
 
-#### Web Design
+This is not a portfolio. It’s a place for me to share things that feel alive, even if only in a small corner. It’s a space to reflect, to experiment, and to let the creative process speak for itself.  
 
-HTML, CSS, jQuery, SASS/SCSS/LESS
+Some days that means publishing a long essay. Other days it’s posting a photo or a short note. Sometimes it’s music or code. Sometimes it’s nothing at all. And that’s okay—the space is as much about the gaps as the content itself.
 
-#### Development
-
-Wordpress Themes & Plugins, Angular, Ionic
-
-### Graphic Design
-
-Corporate Identity, Branding, Logo, Mockup Presentations, Banners
+Thanks for stopping by. If you like what you see—or even just want to peek—stick around. There’s always more being made, slowly, between movement and the ordinary.

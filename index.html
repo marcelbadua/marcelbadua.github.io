@@ -10,30 +10,22 @@ layout: default
 
 </div>
 
-
-<!-- 
-<p>Reach me anytime: <a href="mailto:bitterdash@gmail.com">bitterdash@gmail.com</a></p>
-
-<p>Twitter: <a target="_blank" href="https://twitter.com/marcelbadua">@marcelbadua</a></p>
-
-<p>Instagram: <a target="_blank" href="https://www.instagram.com/marcelbadua/">@marcelbadua</a></p>
-
-<p>Soundcloud: <a target="_blank" href="https://soundcloud.com/marcel-badua">marcel-badua</a></p>
-
-<p>Youtube: <a target="_blank" href="https://www.youtube.com/user/eMtotskee/videos">eMtotskee</a></p> -->
-
 <div class="posts">
 
 {% for post in site.posts limit:3 %}
 
   <article class="entry">
 
-    <div>
-      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <div class="entry-header">
+      <h4 class="post-title"><a href="{{ post.url | relative_url }}" class="post-link">{{ post.title }} </a></h4>
+      <div class="post-meta">
+
+				<!-- <span class="post-categories">{{ page.tags  | join: ' | ' }}</span> -->
+
+	      		<time class="post-date" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
+
+	    </div>
     </div>
-
-    <h5 class="post-title"><a href="{{ post.url | relative_url }}" class="post-link">{{ post.title }} </a></h5>
-
   
     <div class="post-summary">
 

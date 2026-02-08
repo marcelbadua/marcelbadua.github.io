@@ -5,7 +5,7 @@
 
 // Our variables
 $base-font-family: "Source Sans 3", sans-serif;
-$base-font-size:   16px;
+$base-font-size:   20px;
 $base-font-weight: 400;
 $small-font-size:  0.8rem;
 $base-line-height: 1.6;
@@ -19,6 +19,8 @@ $base-spacing:          1rem;
 $text-color:       #111;
 $background-color: #fdfdfd;
 $primary-color:      #3E2F84;
+
+$text-muted:      #666;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);

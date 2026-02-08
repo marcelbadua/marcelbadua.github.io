@@ -49,19 +49,15 @@
         </div>
       </header>
 
-      <main id="site-content">
-        <div class="container">
-        {{ content }}
-      </div>
 
-      </main>
+      {{ content }}
+  
 
       <footer id="site-footer">
         <div class="container">
-          
-          <p>&copy; {{ site.time | date: "%Y" }} Marcel Badua. All rights reserved.</p>
-
-
+          <p>Made slowly. No rush here. Last updated when it felt right.</p>
+          <p>&copy; {{ site.time | date: "%Y" }} Marcel Badua. All rights reserved. </p>
+          <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
       </div>
       </footer>
 

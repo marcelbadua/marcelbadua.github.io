@@ -1,0 +1,128 @@
+// =============================
+// Single Post Layout
+// =============================
+.post-content-page {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+
+  .post-article {
+    header.post-header {
+      text-align: center;
+      margin-bottom: 3rem;
+
+      h1 {
+
+        font-size: clamp(2rem, 5vw, 3rem);
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+        color: #111;
+      }
+
+      .post-date {
+  
+        font-size: clamp(0.85rem, 2.2vw, 0.95rem);
+        color: #888;
+        margin-bottom: 0.25rem;
+      }
+
+      .post-categories {
+  
+        font-size: clamp(0.85rem, 2.2vw, 0.95rem);
+        color: #555;
+        a {
+          text-decoration: none;
+          color: #555;
+          transition: color 0.2s;
+          &:hover {
+            color: #111;
+          }
+        }
+      }
+    }
+
+    .post-body {
+
+      font-size: clamp(1rem, 2.5vw, 1.1rem);
+      line-height: 1.8;
+      color: #222;
+
+      img, video, iframe {
+        max-width: 100%;
+        height: auto;
+        margin: 2rem 0;
+        border-radius: 8px;
+      }
+
+      blockquote {
+
+        font-size: clamp(1.1rem, 2.8vw, 1.3rem);
+        margin: 2rem auto;
+        padding-left: 1rem;
+        border-left: 3px solid #ddd;
+        color: #555;
+      }
+
+      pre {
+        background: #f7f7f7;
+        padding: 1rem;
+        overflow-x: auto;
+        border-radius: 6px;
+      }
+    }
+
+    footer.post-footer {
+      margin-top: 4rem;
+
+      font-size: clamp(0.9rem, 2.2vw, 1rem);
+      color: #555;
+
+      .post-tags a {
+        text-decoration: none;
+        color: #555;
+        transition: color 0.2s;
+        &:hover {
+          color: #111;
+        }
+      }
+    }
+  }
+
+  .post-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    font-family: "Inter", sans-serif;
+
+    a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+      transition: color 0.2s;
+      &:hover {
+        color: #555;
+      }
+    }
+  }
+}
+
+// =============================
+// Mobile adjustments
+// =============================
+@media (max-width: 768px) {
+  .post-content-page {
+    margin: 3rem auto;
+
+    .post-article {
+      .post-body {
+        font-size: clamp(0.95rem, 2.2vw, 1rem);
+      }
+    }
+
+    .post-navigation {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+  }
+}

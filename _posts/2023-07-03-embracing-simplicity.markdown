@@ -3,6 +3,7 @@ layout: post
 title:  "Embracing Simplicity: A Path to Social Detoxification and Improved Mental Well-being"
 date:   2023-07-03 11:53:00
 tags: blog
+excerpt: "In today's fast-paced and hyper-connected world, society often perpetuates the belief that more is better. We are surrounded by relentless messages encouraging us to strive for greater accomplishments, material possessions, and social status. "
 ---
 In today's fast-paced and hyper-connected world, society often perpetuates the belief that more is better. We are surrounded by relentless messages encouraging us to strive for greater accomplishments, material possessions, and social status. This constant pursuit of success and validation can lead to an overwhelming burden of expectations, resulting in anxiety and depression. 
 

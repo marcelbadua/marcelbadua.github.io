@@ -2,7 +2,7 @@
 layout: post
 title:  "Mali ang Liko, Tama ang Trip: Isang Random na Bike Ride sa La Union"
 date:   2026-02-07 12:00:00
-tags: blog
+tags: blog, youtube
 excerpt: "Minsan, hindi nasusunod ang plano sa ride, pero doon nagsisimula ang totoong adventure. Wrong turns, back roads, open fields, at sunset sa Agoo Eco Park—isang paalala na sa cycling, hindi ang destinasyon ang mahalaga kundi ang pag-enjoy sa bawat sandali sa daan."
 ---
 

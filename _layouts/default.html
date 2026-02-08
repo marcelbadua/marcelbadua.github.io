@@ -1,96 +1,111 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Open Graph / Facebook -->
-<meta property="og:title" content="{{ page.title | default: site.title }}">
-<meta property="og:description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
-<meta property="og:type" content="article">
-<meta property="og:url" content="{{ page.url | absolute_url }}">
-<meta property="og:image" content="{{ page.image | default: site.default_image | absolute_url }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ page.title | default: site.title }}">
-<meta name="twitter:description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
-<meta name="twitter:image" content="{{ page.image | default: site.default_image | absolute_url }}">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ page.image | default: site.default_image | absolute_url }}">
 
-
-    <script data-ad-client="ca-pub-4040201528265266" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-    <meta name="google-site-verification" content="cY_prtb_fwZbsC_PdqHK1NCrM84n_QJ0KNtVAA4VsW8" />
-
-    <title>{% if page.title %}{{ page.title | escape }} | Marcel Badua{% else %}{{ site.title | escape }}{% endif %}</title>
-
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-    <link rel="icon" type="image/png" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-  </head>
-
-  <body>
-
-    <div id="site-wrap">
-
-      <header id="site-header">
-
-        <div class="container">
-
-          <a class="site-title" href="{{ site.baseurl }}/">Marcel Badua</a>
-
-          <nav id="site-nav">
-
-            <ul class="menu">
-              {% for nav_page in site.pages %}
-                {% if nav_page.title %}
-                <li><a href="{{ nav_page.url | prepend: site.baseurl }}">{{ nav_page.title }}</a></li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-          </nav>
-
-        </div>
-      </header>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta name="twitter:description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
+  <meta name="twitter:image" content="{{ page.image | default: site.default_image | absolute_url }}">
 
 
-      {{ content }}
-  
+  <script data-ad-client="ca-pub-4040201528265266" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-      <footer id="site-footer">
-        <div class="container">
-          <p>Made slowly. No rush here. Last updated when it felt right.</p>
-          <p>&copy; {{ site.time | date: "%Y" }} Marcel Badua. All rights reserved. </p>
-          <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <meta name="google-site-verification" content="cY_prtb_fwZbsC_PdqHK1NCrM84n_QJ0KNtVAA4VsW8" />
+
+  <title>{% if page.title %}{{ page.title | escape }} | Marcel Badua{% else %}{{ site.title | escape }}{% endif %}
+  </title>
+
+  <meta name="description"
+    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="icon" type="image/png" href="{{ " /favicon.ico" | prepend: site.baseurl }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ " /assets/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml" | prepend:
+    site.baseurl | prepend: site.url }}">
+
+</head>
+
+<body>
+
+  <div id="site-wrap">
+
+    <header id="site-header">
+
+      <div class="container">
+
+        <a class="site-title" href="{{ site.baseurl }}/">Marcel Badua</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="site-nav">
+
+          <ul class="menu">
+            {% for nav_page in site.pages %}
+            {% if nav_page.title %}
+            <li><a href="{{ nav_page.url | prepend: site.baseurl }}">{{ nav_page.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </nav>
+
       </div>
-      </footer>
+    </header>
 
-    </div>
 
-  </body>
+    {{ content }}
 
-  <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script src="{{ "/assets/js/scripts.js" | prepend: site.baseurl }}"></script>
 
-  <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <footer id="site-footer">
+      <div class="container">
+        <p>Made slowly. No rush here. Last updated when it felt right.</p>
+        <p>&copy; {{ site.time | date: "%Y" }} Marcel Badua. All rights reserved. </p>
+        <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      </div>
+    </footer>
 
-      ga('create', 'UA-61511129-1', 'auto');
-      ga('send', 'pageview');
+  </div>
 
-  </script>
+</body>
+
+<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="{{ " /assets/js/scripts.js" | prepend: site.baseurl }}"></script>
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-61511129-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </html>

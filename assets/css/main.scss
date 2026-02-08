@@ -4,20 +4,21 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: 'Bitter', serif;
+$base-font-family: "Source Sans 3", sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$small-font-size:  0.8rem;
+$base-line-height: 1.6;
 
-$header-font-weight: 400;
+$header-font-family: "Bitter", serif;
+$header-font-weight: 500;
 
 $spacing-unit:     30px;
-$base-spacing: 1rem;
+$base-spacing:          1rem;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$primary-color:      #00ACC1;
+$primary-color:      #3E2F84;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);

@@ -3,7 +3,12 @@ layout: post
 title: "Baguio Traffic: Chaos, Patience, at Konting Katahimikan"
 date: 2026-01-18
 tags: [blog]
+excerpt: "Baguio talaga… ibang level ang charm ng lungsod, pero kung pag-uusapan ang isa sa pinaka-realities dito—ang traffic—nakaka-experience ka ng iba’t ibang emosyon. 🚦  "
+image: /assets/images/194355411_10217468521098901_9163232569850341137_n.jpg
 ---
+
+![Patintero sa Magsaysay - Harrison Intersection]({{ site.baseurl }}/assets/images/194355411_10217468521098901_9163232569850341137_n.jpg)
+*Patintero sa Magsaysay - Harrison Intersection*
 
 Baguio talaga… ibang level ang charm ng lungsod, pero kung pag-uusapan ang isa sa pinaka-realities dito—ang traffic—nakaka-experience ka ng iba’t ibang emosyon. 🚦  
 

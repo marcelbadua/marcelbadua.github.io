@@ -6,11 +6,9 @@ tags: travel infrastructure public-space urban-design philippines observations
 excerpt: "PITX proves that world-class transport infrastructure is possible in the Philippines. But beyond impressive architecture, the next challenge is creating a more human-centered experience that improves crowd flow, navigation, and everyday travel."
 ---
 
-# PITX is One of the Best Infrastructures for Travelers, But It Could Be Better
-
 ![on screen schedule]({{ site.baseurl }}/assets/images/pitx.jpg)
 
-Unang beses ko ulit dumaan sa PITX after a long trip, at gaya ng karamihan ng biyahero, ang una kong naisip ay, "Ang ganda talaga nito."
+Kapag napupunta ako sa PITX after a long trip, at gaya ng karamihan ng biyahero, ang una kong naisip ay, "Ang ganda talaga nito."
 
 Coming from provinces where bus terminals are minsan simpleng waiting shed lang o bakanteng lote na may ticket booth, PITX feels different. Maluwag, may aircon, may proper loading bays, may stores, may security. Sa unang tingin, masasabi mong pinag-isipan ito.
 

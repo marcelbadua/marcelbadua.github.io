@@ -3,7 +3,7 @@ layout: post
 title:  "PITX is One of the Best Infrastructures for Travelers, But It Could Be Better"
 date:   2026-06-16 12:00:00
 tags: blog observations 
-excerpt: "PITX proves that world-class transport infrastructure is possible in the Philippines. But beyond impressive architecture, the next challenge is creating a more human-centered experience"
+excerpt: "PITX proves that world-class transport infrastructure is possible in the Philippines. But beyond impressive architecture, the next challenge is creating a more human-centered experience that improves crowd flow, navigation, and everyday travel."
 ---
 
 ![on screen schedule]({{ site.baseurl }}/assets/images/pitx.jpg)
